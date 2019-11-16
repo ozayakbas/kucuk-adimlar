@@ -17,7 +17,7 @@ module.exports = function(grunt) {
             separator: ';',
          },
          dist: {
-            src: ['_assets/js/core/jquery-3.4.1.min.js', '_assets/js/core/bootstrap.min.js', '_assets/js/custom/kucuk-adimlar.js'],
+            src: ['_assets/js/core/jquery-3.4.1.min.js', '_assets/js/core/bootstrap.min.js', '_assets/js/plugin/owl.carousel.js', '_assets/js/custom/kucuk-adimlar.js'],
             dest: '_assets/js/kucuk-adimlar.js',
          },
        },
