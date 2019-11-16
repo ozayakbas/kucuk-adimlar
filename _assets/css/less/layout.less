@@ -1,5 +1,152 @@
+body{
+	font-family: 'Open Sans';
+}
 header{
 	.bar{
 		background-color: @c-blue;
+		box-sizing:border-box;
+		height: 40px;
+		font-size:12px;
+
+			.socials{
+				display: inline-block;
+				width: 30%;
+				padding:10px 0;
+				li{
+					list-style: none;
+					margin:0 10px;
+					display: inline-block;
+					&::first-child{
+						margin:0;
+					}
+					a{
+						color:@c-w;
+						i{
+							font-size:13px;
+						}
+					}
+				}
+			}
+			.top-right{
+				width: auto;
+				max-width: 70%;
+				display: inline-block;
+				float: right;
+				text-align: right;
+				li{
+					list-style: none;
+					float: left;
+					border-right:solid 1px @c-blue2;
+
+					&:last-child{
+						border:none;
+					}
+
+					&.user{
+						background-color:@c-pink;
+					}
+
+					a{
+						color: @c-w;
+						padding:11px 20px;
+						display: inline-block;
+						i{
+							display: inline-block;
+							margin:0 10px 0 0;
+							font-size:13px;
+						}
+					}
+				}
+			}
+	}
+	.head{
+		.logo{
+			float: left;
+			img{}
+		}
+		nav{
+			margin-left:auto;
+			width: auto;
+			display: inline-block;
+			font-family: 'Comic Sans MS';
+			font-weight: bold;
+			font-size: 15px;
+			position: relative;
+			top:20px;
+			left:35px;
+			a{
+				color: @c-b-text;
+				display: inline-block;
+				margin:0 2.5px;
+				padding:7px 10px;
+				text-decoration: none;
+				.border-radius(4px);
+				.transition(0.5s);
+				&::first-child{margin-left:0;}
+				&::last-child{margin-right:0;}
+
+				&:hover{
+					background-color:@c-pink;
+					color:@c-w;
+				}
+			}
+		}
+		.search{
+			margin-left:auto;
+			width: auto;
+			display: inline-block;
+			float: right;
+			position: relative;
+			top:25px;
+			input{
+				display: none;
+			}
+			a{
+				color:@c-b-text;
+				border:solid 1px @c-b-border;
+				width: 28px;
+				height: 28px;
+				line-height: 28px;
+				text-align: center;
+				text-decoration: none;
+				.border-radius(100%);
+				font-size:11px;
+			}
+		}
+	}
+}
+
+article{
+	display: inline-block;
+	width: 100%;
+
+	section{
+		display: inline-block;
+		width: 100%;
+		&.swiper{
+			height: 552px;
+			position:relative;
+			.owl-carousel{
+				width: 100%;
+				height: 552px;
+				.item{
+					height: 552px;	
+					background:url('/_assets/img/swiper/1-bg.jpg') no-repeat;
+					background-size:cover;
+					.img-wrap{
+						width: 403px;
+						height: 394px;
+						position:relative;
+						float: right;
+						top:90px;
+						img{
+							position:absolute;
+							top:0;
+							left:0;
+						}
+					}
+				}
+			}
+		}
 	}
 }

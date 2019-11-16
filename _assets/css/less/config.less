@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=latin-ext');
+
 @desktop-large:   ~"only screen and and (min-width : 1824px)";
 @desktop-small:   ~"only screen and (min-width : 1224px)";
 @tablet:    ~"only screen and (min-width : 768px) and (max-width : 1024px)";
@@ -58,4 +60,11 @@
     -ms-transform: rotate(@param); /* IE 9 */
     -webkit-transform: rotate(@param); /* Safari */
     transform: rotate(@param);
+}
+
+.opacity(@param){
+    filter: alpha(opacity=@param);
+    -moz-opacity:@param;
+    -khtml-opacity: @param;
+    opacity: @param;
 }
